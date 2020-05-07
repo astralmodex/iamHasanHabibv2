@@ -70,13 +70,21 @@ h2 {
         cursor: default;
 }
 
-h2:after {
+h2::after,
+h3::after {
         display: block;
         height: 2px;
         background-color: #fcbf1e;
         content: " ";
         width: 100px;
         margin: 5% auto 0 auto;
+}
+
+h3 {
+        font-family: 'Josefin Sans', Arial, Helvetica, sans-serif;
+        color: #035aa6;
+        font-weight: 600;
+        font-size: 300%;
 }
 
 
@@ -910,21 +918,54 @@ button {
 
 
 
-
-.row-yt-videos {
-        background-color: teal;
-        width: 100%;
+.row-featured-left-main {
+        background-color: #1f1f1f;
+        width: 100vw;
+        min-height: 60vh;
         display: grid;
-        grid-template-columns: repeat(3, 300px);
-        grid-template-rows: 500px;
-        column-gap: 10%;
-        margin: 5% 0;
+        grid-template-columns: 60% 40% ;
+        column-gap: 2%;
+        row-gap: 2%;
+        margin: 0;
+        padding: 4% 0;
 }
 
-.vid-col {
-        background-color: violet;
-        height: 500px;
+.row-featured-right-main {
+        background-color: #1f1f1f;
+        width: 100vw;
+        min-height: 60vh;
+        display: grid;
+        grid-template-columns: 40% 60% ;
+        column-gap: 2%;
+        row-gap: 2%;
+        margin: 0 ;
+        padding: 4% 0;
+}
+
+.pencil-img-col {
+        height: 60vh;
+        overflow: hidden;
+        background-image: linear-gradient( to right, #ffffff00, #ffffff00, #ffffff00, #ffffff00, #ffffff00, #ffffff0e, #ffffff33, #ffffff60) ,url(../img/pencil365.png);
+}
+.pencil-img-col img {
+        height: 60vh;
+        width: auto;
+}
+
+.feature-content {
+        background-color: #000000;
         display: flex;
         flex-direction: column;
         align-items: center;
+        border: 2px solid #ec087a;
+}
+
+.feature-content .long-copy {
+        color: #fff;
+}
+
+.youtube-img {
+        height: 150px;
+        width: auto;
+        margin: 5% 0 0 0;
 }
