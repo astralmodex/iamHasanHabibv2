@@ -1122,7 +1122,6 @@ footer {
 }
 
 footer .pf-para {
-        background-color: aqua;
         display: flex;
         justify-content: center;
         align-items: center;
