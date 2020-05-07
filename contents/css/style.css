@@ -975,6 +975,7 @@ button {
 
 .feature-content h2 {
         font-size: 200%;
+        text-align: center;
 }
 .feature-content .long-copy {
         color: #fff;
