@@ -1093,7 +1093,8 @@ footer {
 
 .fa-facebook-f,
 .fa-instagram,
-.fa-twitter {
+.fa-twitter,
+.fa-linkedin {
         display: block;
         font-size: 200%;
 }
@@ -1114,6 +1115,12 @@ footer {
         color: #8a3ab9  ;
         transition: color 0.35s;
 }
+.sl-lin:hover,
+.sl-lin:active {
+        color: #0e76a8   ;
+        transition: color 0.35s;
+}
+
 
 .footer-col {
         display: flex;
