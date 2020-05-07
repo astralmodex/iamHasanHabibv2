@@ -105,6 +105,7 @@ h2:after {
 
 nav {
         position: fixed;
+        top: 0;
         height: 60px;
         z-index: 1000;
         width: 100%;
@@ -152,9 +153,8 @@ nav {
         display: block;
         line-height: 56px;
         text-align: center;
-        margin: 0 0 0 10px ;
+        margin: 0 0 0 20px ;
         height: 60px;
-        width: 100px;
 }
 
 .main-nav li {
@@ -269,10 +269,11 @@ header {
 
 
 .row-section-1-text {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding:  0 5% 5% 5% ;
+        padding:  5% 10% 5% 10% ;
 }
 
 .row-section-1-text .long-copy {
@@ -330,7 +331,7 @@ header {
 /*_______________ SECTION-4 RECOMMENDATION _______________*/
 /*------------------------------------------------------------*/
 
-.row-section-2, .row-section-4 {
+.row-section-1, .row-section-3 {
         width: 100%;
         margin: 0 auto;
         padding: 0 10%;
@@ -342,14 +343,14 @@ header {
         background-image: linear-gradient(#f4f4f4, #ffffff);
 }
 
-.row-section-4 {
+.row-section-3 {
         width: 70%;
         margin: 5% auto;
         background-image: linear-gradient(#f4f4f4, #f2f2f2);
 }
 
-.row-section-2 h2::after,
-.row-section-4 h2::after {
+.row-section-1 h2::after,
+.row-section-3 h2::after {
         margin-bottom: 10% ;
 }
 .rec-slot-prev {
@@ -562,7 +563,7 @@ button {
 /*_______________ SECTION-ACCOMPLISHMENTS _______________*/
 /*------------------------------------------------------------*/
 
-.row-section-5 {
+.row-section-4 {
         width: 100%;
         margin: 0 auto;
         padding: 0 10%;
@@ -573,7 +574,7 @@ button {
 
         background-image: linear-gradient(#f7f7f7, #fff);
 }
-.row-section-5 h2::after {
+.row-section-4 h2::after {
         margin-bottom: 10% ;
 }
 
@@ -661,16 +662,17 @@ button {
 /*_______________ SECTION-XP-EDU _______________*/
 /*------------------------------------------------------------*/
 
-.row-section-3 {
+.row-section-2 {
         width: 100%;
         display: flex;
+        background-image: linear-gradient(#f4f4f4, #f2f2f2);
 }
 
-.row-section-3 h2 {
+.row-section-2 h2 {
         font-size: 200%;
         margin:  0 0 5% 0;
 }
-.row-section-3 h2::after {
+.row-section-2 h2::after {
         display: none;
 }
 
@@ -734,28 +736,57 @@ button {
 
 #header-resume {
         background-image: url(../img/header1.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-clip: border-box;
+        height: 310vh;
+        padding: 10% 0;
 }
 
 .portfolio-content {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
         width: 90%;
         height: auto;
-        margin: 5% auto;
-        padding: 2%;
+        margin: 0 auto;
+        padding: 2% ;
         background-color: #ffffff;
 
         border-top-right-radius: 50px;
         border-bottom-left-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
 }
 
 .h1-black {
         color: #000000;
         margin: 0 0 2% 0 ;
 }
+
+.row-top {
+        display: grid;
+        grid-template-columns: 70% 30%;
+}
+
+.top-text-pf {
+        padding: 2% 5% 2% 2%;
+        margin: 0 5% 0 5%;
+}
+
 .nav-avatar-pf {
-        width: 100%;
+        width: 95%;
         height: auto;
+        margin: 10% 0 0 0 ;
         border-radius: 50%;
         box-shadow: 0px 0px 20px 10px #000000;
+}
+
+.row-portfolio-text {
+        width: 90%;
+        margin: 0 auto;
 }
 
 .pf-title {
@@ -825,6 +856,7 @@ button {
 .pf-para a:hover, 
 .pf-para a:active {
         color: #b9c7fa;
+        text-decoration: none;
         transition: color 0.35s;
 }
 
@@ -836,33 +868,63 @@ button {
         border-radius: 5px 5px 0 0;
         overflow: hidden;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-      }
+}
       
-      .content-table thead tr {
+.content-table thead tr {
         background-color: #06185a;
         color: #ffffff;
         text-align: left;
         font-weight: bold;
-      }
+}
       
-      .content-table th,
-      .content-table td {
+.content-table th,
+.content-table td {
         padding: 12px 15px;
-      }
+}
       
-      .content-table tbody tr {
+.content-table tbody tr {
         border-bottom: 1px solid #dddddd;
-      }
+}
       
-      .content-table tbody tr:nth-of-type(even) {
+.content-table tbody tr:nth-of-type(even) {
         background-color: #f3f3f3;
-      }
+}
       
-      .content-table tbody tr:last-of-type {
+.content-table tbody tr:last-of-type {
         border-bottom: 2px solid #06185a;
-      }
+}
       
-      .content-table tbody tr.active-row {
+.content-table tbody tr.active-row {
         font-weight: bold;
         color: #06185a;
-      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row-yt-videos {
+        background-color: teal;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: 500px;
+        column-gap: 10%;
+        margin: 5% 0;
+}
+
+.vid-col {
+        background-color: violet;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
