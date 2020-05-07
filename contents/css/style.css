@@ -339,7 +339,7 @@ header {
 /*_______________ SECTION-4 RECOMMENDATION _______________*/
 /*------------------------------------------------------------*/
 
-.row-section-1, .row-section-3 {
+.row-section-1, .row-section-3, .row-section-featured {
         width: 100%;
         margin: 0 auto;
         padding: 0 10%;
@@ -349,6 +349,15 @@ header {
         padding: 5% 0 2% 0;
         
         background-image: linear-gradient(#f4f4f4, #ffffff);
+}
+
+.row-section-featured {
+        background-image: linear-gradient(#000000, #191919, #191919, #191919, #191919, #191919, #191919, #191919);
+}
+
+.row-section-featured .long-copy {
+        font-size: 100%;
+        color: #fcbf1e;
 }
 
 .row-section-3 {
@@ -515,8 +524,12 @@ blockquote:before {
 
 
 /*------------------------------------------------------------*/
-/*_______________ BUTTONS _______________*/
+/*_______________ BUTTONS & LINKS _______________*/
 /*------------------------------------------------------------*/
+
+a {
+        text-decoration: none;
+}
 
 button {
         background-color: transparent;
@@ -919,7 +932,7 @@ button {
 
 
 .row-featured-left-main {
-        background-color: #1f1f1f;
+        background-color: transparent;
         width: 100vw;
         min-height: 60vh;
         display: grid;
@@ -931,7 +944,7 @@ button {
 }
 
 .row-featured-right-main {
-        background-color: #1f1f1f;
+        background-color: transparent;
         width: 100vw;
         min-height: 60vh;
         display: grid;
@@ -945,7 +958,6 @@ button {
 .pencil-img-col {
         height: 60vh;
         overflow: hidden;
-        background-image: linear-gradient( to right, #ffffff00, #ffffff00, #ffffff00, #ffffff00, #ffffff00, #ffffff0e, #ffffff33, #ffffff60) ,url(../img/pencil365.png);
 }
 .pencil-img-col img {
         height: 60vh;
@@ -953,19 +965,92 @@ button {
 }
 
 .feature-content {
-        background-color: #000000;
+        background-color: #111;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 2px solid #ec087a;
+        border: 2px solid #035aa6;
+        padding: 5%;
 }
 
+.feature-content h2 {
+        font-size: 200%;
+}
 .feature-content .long-copy {
         color: #fff;
 }
 
+.yt-img-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+}
 .youtube-img {
-        height: 150px;
-        width: auto;
-        margin: 5% 0 0 0;
+        display: block;
+        height: auto;
+        width: 100%;
+}
+
+.more-btn {
+        background-color: #fcbf1e;
+        border-radius: 200px;
+        padding: 2% 5%;
+        color: #030b2a;
+        font-weight: 1000;
+}
+.more-btn:hover,
+.more-btn:active {
+        background-color: #030b2a;
+        border-radius: 200px;
+        color: #40bad5;
+        font-weight: 1000;
+        transition: color 0.35s, background-color 0.2s;
+}
+
+.yt-card-container {
+        margin: 0 0 0 -6% ;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: minmax(200px) ;
+        gap: 10%;
+}
+
+.yt-card{
+        position: relative;
+        padding: 80% 0 0 0 ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid #40bad5;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+}
+.yt-card iframe{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        border-bottom: 2px solid hotpink;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+}
+
+.yt-card .acc-type-title {
+        font-size: 100%;
+        text-align: center;
+        margin: 0 5%;
+
+}
+.yt-card .acc-type-title::after {
+        width: 60px;
+}
+
+.yt-text {
+        font-size: 80%;
+        color: #b1b1b1;
+        text-align: center;
+        margin: 10% 5%;
 }
