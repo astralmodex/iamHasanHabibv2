@@ -993,12 +993,13 @@ button {
         padding: 2% 5%;
         color: #030b2a;
         font-weight: 1000;
+        text-align: center;
 }
 .more-btn:hover,
 .more-btn:active {
-        background-color: #fcbf1e;
+        background-color: #06185a;
         border-radius: 200px;
-        color: #035aa6;
+        color: #40bad5;
         font-weight: 1000;
         transition: color 0.35s, background-color 0.2s;
 }
@@ -1050,4 +1051,72 @@ button {
         color: #035aa6;
         text-align: center;
         margin: 10% 5%;
+}
+
+
+
+
+
+
+
+
+footer {
+        background-color: black;
+}
+
+.row-footer-nav {
+        display: grid;
+        grid-template-columns: repeat(6, 16.66%);
+        grid-template-rows: 300px;
+        border-top: 2px solid #035aa6;
+}
+
+.footer-nav {
+        list-style: none ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10% 0;
+}
+
+.social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        margin: 10% 0;
+        cursor: pointer;
+        color: #fcbf1e;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-twitter {
+        display: block;
+        font-size: 200%;
+}
+
+.sl-fb:hover,
+.sl-fb:active {
+        color: #3b5998 ;
+        transition: color 0.35s;
+
+}
+.sl-tw:hover,
+.sl-tw:active {
+        color: #00acee   ;
+        transition: color 0.35s;
+}
+.sl-ins:hover,
+.sl-ins:active {
+        color: #8a3ab9  ;
+        transition: color 0.35s;
+}
+
+.footer-col {
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
