@@ -922,14 +922,9 @@ button {
 
 
 
-
-
-
-
-
-
-
-
+/* ------------------------------ */
+/* ---------- SECTION-FEATURES ---------- */
+/* ------------------------------ */
 
 .row-featured-left-main {
         background-color: transparent;
@@ -1001,9 +996,9 @@ button {
 }
 .more-btn:hover,
 .more-btn:active {
-        background-color: #030b2a;
+        background-color: #fcbf1e;
         border-radius: 200px;
-        color: #40bad5;
+        color: #035aa6;
         font-weight: 1000;
         transition: color 0.35s, background-color 0.2s;
 }
@@ -1018,14 +1013,14 @@ button {
 }
 
 .yt-card{
+        background-color: #fcbf1e;
         position: relative;
         padding: 80% 0 0 0 ;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 2px solid #40bad5;
-        border-top-right-radius: 20px;
-        border-bottom-left-radius: 20px;
+        border-top-right-radius: 23px;
+        border-bottom-left-radius: 23px;
 }
 .yt-card iframe{
         position: absolute;
@@ -1033,7 +1028,6 @@ button {
         left: 0;
         width: 100%;
         height: auto;
-        border-bottom: 2px solid #40bad5;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 20px;
 
@@ -1043,15 +1037,17 @@ button {
         font-size: 100%;
         text-align: center;
         margin: 0 5%;
+        color: #120136;
 
 }
 .yt-card .acc-type-title::after {
         width: 60px;
+        background-color: #40bad5;
 }
 
 .yt-text {
         font-size: 80%;
-        color: #b1b1b1;
+        color: #035aa6;
         text-align: center;
         margin: 10% 5%;
 }
