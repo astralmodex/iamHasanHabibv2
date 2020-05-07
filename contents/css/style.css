@@ -1120,3 +1120,14 @@ footer {
         align-items: center;
         justify-content: center;
 }
+
+footer .pf-para {
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+        color: #fcbf1e;
+}
